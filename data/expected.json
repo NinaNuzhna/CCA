@@ -18,7 +18,7 @@
     "deleteBtn": "DELETE",
     "resetBtn": "RESET",
     "editNameField": "Default Counter",
-    "editNameFieldLabel": "Enter Counter Title: ",
+    "editNameFieldLabel": "Edit Counter Title:",
     "defaultNumberBlackBtn": 6,
     "blackBtn":  ["-1", "-2", "-3", "1", "2", "3"],
     "errorMsg": ".alert"

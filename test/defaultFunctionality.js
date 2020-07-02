@@ -7,23 +7,23 @@ describe('Default counter functionality', function () {
 
         it('TC-040 Calculation: Sub 1 works',  () => {
             browser.url('');
-            const button = $$(selectorCnt.blackBtn)[0];
-            button.click();
+            const blackBtn = $$(selectorCnt.blackBtn)[0];
+            blackBtn.click();
             const countValue = $(selectorCnt.countValue).getText();
             expect(countValue).toEqual(expectedDCF.countValueTC040);
         })
 
         it('TC-041 Calculation: Add 3 works', () => {
-            const button = $$(selectorCnt.blackBtn)[5];
-            button.click();
+            const blackBtn = $$(selectorCnt.blackBtn)[5];
+            blackBtn.click();
             const countValue = $(selectorCnt.countValue).getText();
             expect(countValue).toEqual(expectedDCF.countValueTC041);
         })
 
         it('TC-042 LLF accept 1', () => {
 
-            const button = $(selectorCnt.lowerLimitField);
-            button.click();
+            const btn = $(selectorCnt.lowerLimitField);
+            btn.click();
             const input = $(selectorCnt.lowerInputField);
             input.click();
             browser.keys('Backspace');
@@ -33,8 +33,8 @@ describe('Default counter functionality', function () {
         })
 
         it('TC-043 ULF accept 9', () => {
-            const button = $(selectorCnt.upperLimitField);
-            button.click();
+            const btn = $(selectorCnt.upperLimitField);
+            btn.click();
             const input = $(selectorCnt.upperInputField);
             input.click();
             browser.keys('Backspace');
@@ -43,21 +43,21 @@ describe('Default counter functionality', function () {
             expect(result).toEqual(expectedDCF.blackBtnTC42);
         })
 
-        it('TC-044 LLF = 1 and ULF = 1 gives 2 black buttons',() => {
-            const button = $(selectorCnt.lowerLimitField);
-            button.click();
-            const input = $(selectorCnt.lowerInputField);
-            input.click();
-            browser.keys('Backspace');
-            browser.keys(expectedDCF.inputMin);
-            const button = $(selectorCnt.upperLimitField);
-            button.click();
-            const input = $(selectorCnt.upperInputField);
-            input.click();
-            browser.keys('Backspace');
-            browser.keys(expectedDCF.inputMin);
-
-        })
+        // it('TC-044 LLF = 1 and ULF = 1 gives 2 black buttons',() => {
+        //     const btn = $(selectorCnt.lowerLimitField);
+        //     btn.click();
+        //     const input = $(selectorCnt.lowerInputField);
+        //     input.click();
+        //     browser.keys('Backspace');
+        //     browser.keys(expectedDCF.inputMin);
+        //     const button = $(selectorCnt.upperLimitField);
+        //     button.click();
+        //     const input = $(selectorCnt.upperInputField);
+        //     input.click();
+        //     browser.keys('Backspace');
+        //     browser.keys(expectedDCF.inputMin);
+        //
+        // })
 
 
 
