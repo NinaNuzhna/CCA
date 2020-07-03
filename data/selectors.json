@@ -20,7 +20,6 @@
     "editNameField": "[name='edit']",
     "editNameFieldLabel": "label",
     "blackBtn": ".btn-black",
-    "errorMsg": ".alert",
-    "blackBtnTC42": "[step='9']"
+    "error": ".alert"
   }
 }

@@ -21,7 +21,7 @@
     "editNameFieldLabel": "Edit Counter Title:",
     "defaultNumberBlackBtn": 6,
     "blackBtn":  ["-1", "-2", "-3", "1", "2", "3"],
-    "errorMsg": ".alert"
+    "error": ".alert"
   },
   "defaultCounterFunctionality": {
     "countValue": "0",
@@ -29,6 +29,6 @@
     "countValueTC041": "2",
     "inputMin": "1",
     "inputMax": "9",
-    "blackBtnTC42": "9"
+    "blackBtnTC44TC45": 2
   }
 }
