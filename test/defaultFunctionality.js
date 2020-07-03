@@ -50,12 +50,12 @@ describe('Default counter functionality', function () {
             expect(actual.length).toEqual(expectedDCF.blackBtnTC44TC45);
         })
 
-        it('TC-046 Reset button works', () => {
-            $$(selectorCnt.blackBtn)[1].click();
-            $(selectorCnt.resetBtn).click();
-            const countValue = $(expectedCnt.countValue).getText();
-            expect(countValue).toEqual(expectedCnt.countValue);
-        })
+        // it('TC-046 Reset button works', () => {
+        //     $$(selectorCnt.blackBtn)[1].click();
+        //     $(selectorCnt.resetBtn).click();
+        //     const countValue = $(expectedCnt.countValue).getText();
+        //     expect(countValue).toEqual(expectedCnt.countValue);
+        // })
 
 
 
